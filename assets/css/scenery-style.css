@@ -20,7 +20,7 @@ body {
 }
 
 /* ==================== BARRA DE NAVEGAÇÃO ==================== */
-.nav {
+.nav-header {
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -179,7 +179,13 @@ body {
 /* ============================================================ */
 
 /* ==================== SCENERY GAMES ==================== */
-.banner img {
+.scenery-games {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+}
+
+.banner {
     display: block;
     margin: 0 auto 20px auto;
     padding: 20px;
@@ -188,20 +194,19 @@ body {
     text-align: center;
 }
 
-h1 {
+.my-games {
     display: block;
     margin-top: 60px;
     text-align: center;
     color: #f0f0f0;
 }
 
-.descricao p {
+.description {
     margin: 0 auto 20px auto;
-    width: 50%;
+    width: 90%;
     
     font-family: "Recursive", sans-serif;
     font-size: 30px;
-    text-align: justify;
     color: #f0f0f0;
 }
 
@@ -214,7 +219,7 @@ h1 {
     text-align: center;
 }
 
-.botao-contatos {
+.btn-contatos {
     display: flex;
     justify-content: center;
     position: relative;
@@ -236,7 +241,7 @@ h1 {
 }
 
 /* ========== RODAPÉ ========== */
-.rodape {
+.site-footer {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -248,31 +253,31 @@ h1 {
     color: #f0f0f0;
     font-size: 15px;
     text-align: center;
+    box-shadow: 0px 10px 13px 7px #000000;
 }
 
 /* Responsividade Scenery Games */
 @media (max-width: 750px) {
-    .banner img {
+    .banner {
         width: 300px;
         height: auto;
     }
 
-    .descricao p {
+    .description {
         font-size: 15px;
-        text-align: center;
     }
     .malign-mix {
         width: 180px;
         height: auto;
     }
 
-    .botao-contatos {
+    .btn-contatos {
         padding: 20px;
         max-width: 300px;
         font-size: 20px;
     }
     
-    .rodape {
+    .site-footer {
         font-size: 10px;
     }
 

@@ -35,7 +35,7 @@ body {
 }
 
 /* ==================== BARRA DE NAVEGAÇÃO ==================== */
-.nav {
+.nav-header {
     position: fixed; /* Controla o posicionamento de elementos dentro de uma página web. | é posicionado em relação à janela de visualização, o que significa que ele sempre permanece no mesmo lugar, mesmo que a página seja rolada. */
     top: 0; /* Posição vertical. OBS: Esta propriedade não tem efeito em elementos não posicionados. */
     left: 0; /* Posição Horizontal. */
@@ -47,7 +47,7 @@ body {
     justify-content: space-between; /* Alinha os itens do contêiner flexível quando os itens não usam todo o espaço disponível no eixo principal (HORIZONTAL) */
     align-items: center; /* justify-content, só que na vertical*/
     
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 2px 2px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000;
     background-color: #292b2c;
     color: #f0f0f0;
     font-size: 20px;
@@ -198,7 +198,7 @@ body {
 /* ============================================================ */
 
 /* ==================== SOBRE-MIM ==================== */
-.sobre-mim {
+.about-me {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -229,7 +229,7 @@ body {
     color: #f0f0f0;
     text-align: left;
     border-radius: 5px;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 2px 2px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000; 
 
     transition: transform .3s ease, box-shadow .3s ease;
 }
@@ -258,7 +258,7 @@ body {
     font-size: 25px;
 }
 
-.descricao {     
+.description {     
     max-width: 85%;
     
     font-size: 20px;
@@ -267,11 +267,11 @@ body {
     color: #f0f0f0;
 }
 
-.descricao p:last-child {
+.description p:last-child {
     font-size: 20px;
 }
 
-.botao-curriculo {
+.btn-curriculo {
     display: flex;
     position: relative;
     justify-content: center;
@@ -290,13 +290,20 @@ body {
     text-align: center;
     text-decoration: none;
     color: #000;
+    box-shadow: 0px 10px 13px -7px #000000; 
     
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 2px 2px rgba(0,0,0,0); 
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.btn-curriculo:hover {
+    transform: scale(1.01); /* levanta e dá um leve zoom */
+
+    box-shadow: 0px 20px 25px -10px #000000, 10px 10px 5px 2px rgba(0,0,0,0.3);
 }
 /* ============================================================ */
 
 /* ==================== RODAPÉ ==================== */
-.rodape {
+.site-footer {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -308,11 +315,12 @@ body {
     color: #f0f0f0;
     font-size: 15px;
     text-align: center;
+    box-shadow: 0px 10px 13px 7px #000000;
 }
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 750px) {
-    .sobre-mim {
+    .about-me {
         flex-direction: column;
         align-items: center;
     }
@@ -339,7 +347,7 @@ body {
         white-space: normal;
     }
 
-    .descricao {
+    .description {
         max-width: 80%;
         flex-direction: row;
         margin: 20px auto 0px auto;
@@ -347,13 +355,13 @@ body {
         font-size: 15px;
     }
 
-    .botao-curriculo {
+    .btn-curriculo {
         padding: 20px;
         max-width: 300px;
         font-size: 20px;
     }
 
-    .rodape {
+    .site.footer {
         font-size: 10px;
     }
 }

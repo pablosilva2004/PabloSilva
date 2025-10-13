@@ -18,7 +18,7 @@ body {
 }
 
 /* ==================== BARRA DE NAVEGAÇÃO ==================== */
-.nav {
+.nav-header {
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -30,7 +30,7 @@ body {
     justify-content: space-between; 
     align-items: center; 
     
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 2px 2px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000;
     background-color: #292b2c;
     color: #f0f0f0;
     font-size: 20px;
@@ -176,8 +176,8 @@ body {
 }
 /* ============================================================ */
 
-/* ==================== CURRÍCULO ==================== */
-.meu-curriculo {
+/* ==================== MEU CURRÍCULO ==================== */
+.my-resume {
     display: block;
     flex-wrap: wrap;
     
@@ -187,7 +187,7 @@ body {
     max-width: 500px;
 }
 
-.meu-curriculo header {
+.my-resume header {
     display: block;
     margin: 60px 0 20px 0;
     color: #f0f0f0;
@@ -201,7 +201,7 @@ body {
     background-color: #00bfff;
     color: #f0f0f0;
 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 2px 2px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000; 
     transition: transform .3s ease, box-shadow 0.3s ease;
 }
 
@@ -231,7 +231,7 @@ body {
     text-align: left;
 }
 
-.botao-scenery {
+.btn-scenery {
     display: flex;
     position: relative;
     justify-content: center;
@@ -250,12 +250,19 @@ body {
     text-align: center;
     text-decoration: none;
     color: #f0f0f0;
+    box-shadow: 0px 10px 13px -7px #000000; 
     
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 2px 2px rgba(0,0,0,0); 
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.btn-scenery:hover {
+    transform: scale(1.01); /* levanta e dá um leve zoom */
+
+    box-shadow: 0px 20px 25px -10px #000000, 10px 10px 5px 2px rgba(0,0,0,0.3);
 }
 
 /* ========== RODAPÉ ========== */
-.rodape {
+.site-footer {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -267,24 +274,25 @@ body {
     color: #f0f0f0;
     font-size: 15px;
     text-align: center;
+    box-shadow: 0px 10px 13px 7px #000000;
 }
 
 /* Responsividade Currículo */
 @media (max-width: 750px) {
-    .meu-curriculo {
+    .my-resume {
         flex-direction: column;
     }
-    .card-formacao {
+    .card {
         max-width: 500px;
         flex-direction: column;
     }
-    .botao-scenery {
+    .btn-scenery {
         padding: 20px;
         max-width: 300px;
         font-size: 15px;
     }
 
-    .rodape {
+    .site-footer {
         font-size: 10px;
     }
 }
