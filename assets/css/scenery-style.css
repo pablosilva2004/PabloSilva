@@ -14,7 +14,7 @@ html {
 body {
     padding-top: 80px;
     background-color: #292b2c;
-    background: url(../imgs/scenery-games.gif) no-repeat fixed;
+    background: url(../imgs/Wtf.jpg) no-repeat fixed;
     background-size: cover;         /* cobre a tela toda */
     background-attachment: fixed;
 }
@@ -185,15 +185,6 @@ body {
     padding: 20px;
 }
 
-.banner {
-    display: block;
-    margin: 0 auto 20px auto;
-    padding: 20px;
-    width: 700px;
-    height: auto;
-    text-align: center;
-}
-
 .my-games {
     display: block;
     margin-top: 60px;
@@ -204,6 +195,7 @@ body {
 .description {
     margin: 0 auto 20px auto;
     width: 90%;
+    text-align: center;
     
     font-family: "Recursive", sans-serif;
     font-size: 30px;
